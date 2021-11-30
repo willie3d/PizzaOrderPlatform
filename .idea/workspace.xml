@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="4cdb0c58-3042-4ea6-bfc9-6d3436526af3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizza/src/main/java/com/example/pizza/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/pizza/src/main/java/com/example/pizza/HelloController.java" afterDir="false" />
     </list>
+=======
+    <list default="true" id="cb08cc8c-200f-4dc1-b1ce-bccc80fa25ef" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
   </component>
@@ -23,6 +28,12 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="21eD7bDdf7OZbuSXrakEPCuYil9" />
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="21eLwHMAjLi9rZV9u8jgu9GGTu0" />
+>>>>>>> Stashed changes
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,6 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
+<<<<<<< Updated upstream
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.pizza.HelloApplication" />
@@ -73,4 +85,17 @@
       </map>
     </option>
   </component>
+=======
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cb08cc8c-200f-4dc1-b1ce-bccc80fa25ef" name="Default Changelist" comment="" />
+      <created>1638296844236</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1638296844236</updated>
+    </task>
+    <servers />
+  </component>
+>>>>>>> Stashed changes
 </project>
