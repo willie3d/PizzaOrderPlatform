@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label fx:id="welcomeText" />
+   <Pane prefHeight="550.0" prefWidth="960.0">
+      <children>
+         <Pane layoutX="38.0" layoutY="35.0" prefHeight="214.0" prefWidth="143.0">
+            <children>
+               <ComboBox id="cheeseSize" fx:id="cheeseSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@cheesepizza.png" />
+                  </image>
+               </ImageView>
+               <Button id="cheeseAdd" fx:id="cheeseAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#cheeseOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+               <TextField id="cheeseQuant" fx:id="cheeseQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+            </children>
+         </Pane>
+         <Pane layoutX="204.0" layoutY="35.0" prefHeight="214.0" prefWidth="143.0">
+            <children>
+               <ComboBox id="pepSize" fx:id="pepSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@peppazza.png" />
+                  </image>
+               </ImageView>
+               <Button id="pepAdd" fx:id="pepAdd" layoutX="38.0" layoutY="185.0" mnemonicParsing="false" onAction="#pepOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+               <TextField id="pepQuant" fx:id="pepQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+            </children>
+         </Pane>
+         <Pane layoutX="372.0" layoutY="35.0" prefHeight="214.0" prefWidth="143.0">
+            <children>
+               <ComboBox id="supSize" fx:id="supSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@suppizza.png" />
+                  </image>
+               </ImageView>
+               <Button id="supAdd" fx:id="supAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#supOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+               <TextField id="supQuant" fx:id="supQuant" layoutX="76.0" layoutY="150.0" prefHeight="31.0" prefWidth="72.0" promptText="Quantity" />
+            </children>
+         </Pane>
+         <Pane layoutX="38.0" layoutY="282.0" prefHeight="214.0" prefWidth="143.0">
+            <children>
+               <ComboBox id="pepsiSize" fx:id="pepsiSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@pepsi.png" />
+                  </image>
+               </ImageView>
+               <Button id="pepsiAdd" fx:id="pepsiAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#pepsiOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+               <TextField id="pepsiQuant" fx:id="pepsiQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+            </children>
+         </Pane>
+         <Pane layoutX="204.0" layoutY="282.0" prefHeight="214.0" prefWidth="143.0">
+            <children>
+               <ComboBox id="cokeSize" fx:id="cokeSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@coke.png" />
+                  </image>
+               </ImageView>
+               <Button id="cokeAdd" fx:id="cokeAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#cokeOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+               <TextField id="cokeQuant" fx:id="cokeQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+            </children>
+         </Pane>
+         <Pane layoutX="372.0" layoutY="282.0" prefHeight="214.0" prefWidth="143.0">
+            <children>
+               <ComboBox id="dewSize" fx:id="dewSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+               <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@dew.png" />
+                  </image>
+               </ImageView>
+               <Button id="dewAdd" fx:id="dewAdd" layoutX="38.0" layoutY="187.0" mnemonicParsing="false" onAction="#dewOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+               <TextField id="dewQuant" fx:id="dewQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+            </children>
+         </Pane>
+         <BorderPane fx:id="layout" layoutX="561.0" prefHeight="519.0" prefWidth="399.0">
+            <center>
+               <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            </center></BorderPane>
+      </children>
+   </Pane>
+</VBox>
