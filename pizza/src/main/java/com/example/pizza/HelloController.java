@@ -103,7 +103,7 @@ public class HelloController {
         layout.setCenter(listView);
     }
     @FXML
-    protected void cheeseOnMouseClicked() {
+    protected void cheeseOnMouseClicked() { //test
         list.add(new HBoxCell(cheeseSize.getValue() +" Cheese Pizza","Remove"));
         listView.setItems(myObservableList);
         listView.refresh();
