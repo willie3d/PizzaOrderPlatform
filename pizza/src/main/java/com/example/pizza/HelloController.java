@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class HelloController {
-    ObservableList<String> pizzaSizeList = FXCollections.observableArrayList("Small","Medium","Large");
+    ObservableList<String> pizzaSizeList = FXCollections.observableArrayList("Small","Medium","Large","Extra Large");
     ObservableList<String> sodaSizeList = FXCollections.observableArrayList("Can","Bottle","2-Liter");
     List<HBoxCell> list = new ArrayList<>();
     ObservableList<HBoxCell> myObservableList = FXCollections.observableList(list);
