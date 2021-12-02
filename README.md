@@ -13,7 +13,7 @@ There should be at least:
  
 8 distinct toppings with combinations of up to 4 items
  
-2 crust options
+2 crust options---Completed
  
 5 beverages---Completed
  

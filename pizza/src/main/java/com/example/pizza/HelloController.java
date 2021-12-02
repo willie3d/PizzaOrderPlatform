@@ -26,6 +26,7 @@ import java.io.IOException;
 public class HelloController {
     ObservableList<String> pizzaSizeList = FXCollections.observableArrayList("Small","Medium","Large","Extra Large");
     ObservableList<String> sodaSizeList = FXCollections.observableArrayList("Can","Bottle","2-Liter");
+    ObservableList<String> crustList = FXCollections.observableArrayList("Thin","Buttery","Pan");
     List<HBoxCell> list = new ArrayList<>();
     ObservableList<HBoxCell> myObservableList = FXCollections.observableList(list);
     @FXML
@@ -56,6 +57,12 @@ public class HelloController {
     private ComboBox spriteSize;
     @FXML
     private ComboBox fantaSize;
+    @FXML
+    private ComboBox cheeseCrust;
+    @FXML
+    private ComboBox pepCrust;
+    @FXML
+    private ComboBox supCrust;
     @FXML
     private Button cheeseAdd;
     @FXML
@@ -131,6 +138,9 @@ public class HelloController {
         dewSize.setItems(sodaSizeList);
         spriteSize.setItems(sodaSizeList);
         fantaSize.setItems(sodaSizeList);
+        cheeseCrust.setItems(crustList);
+        pepCrust.setItems(crustList);
+        supCrust.setItems(crustList);
         BorderPane layout = new BorderPane();
         List<HBoxCell> list = new ArrayList<>();
         ListView<HBoxCell> listView = new ListView<HBoxCell>();
@@ -151,7 +161,7 @@ public class HelloController {
         } else if(cheeseSize.getValue().toString() == "Extra Large"){
             thisPrice = 15.99;
         }
-        HBoxCell cheesePizzaCell = new HBoxCell(String.valueOf(thisPrice) + "   " + cheeseSize.getValue() +" Cheese Pizza","Remove",thisPrice);
+        HBoxCell cheesePizzaCell = new HBoxCell(String.valueOf(thisPrice) + "   "+ cheeseCrust.getValue() + " " + cheeseSize.getValue() +" Cheese Pizza","Remove",thisPrice);
         list.add(cheesePizzaCell);
         listView.setItems(myObservableList);
         listView.refresh();
@@ -170,7 +180,7 @@ public class HelloController {
         } else if(pepSize.getValue().toString() == "Extra Large"){
             thisPrice = 15.99;
         }
-        HBoxCell pepPizzaCell = new HBoxCell(String.valueOf(thisPrice) + "   " + pepSize.getValue() +" Pepperoni Pizza","Remove",thisPrice);
+        HBoxCell pepPizzaCell = new HBoxCell(String.valueOf(thisPrice) + "   " + pepCrust.getValue() + " " + pepSize.getValue() +" Pepperoni Pizza","Remove",thisPrice);
         list.add(pepPizzaCell);
         listView.setItems(myObservableList);
         listView.refresh();
@@ -189,7 +199,7 @@ public class HelloController {
         } else if(supSize.getValue().toString() == "Extra Large"){
             thisPrice = 15.99;
         }
-        HBoxCell supPizzaCell = new HBoxCell(String.valueOf(thisPrice) + "   " + supSize.getValue() +" Supreme Pizza","Remove",thisPrice);
+        HBoxCell supPizzaCell = new HBoxCell(String.valueOf(thisPrice) + "   " + supCrust.getValue() + " " + supSize.getValue() +" Supreme Pizza","Remove",thisPrice);
         list.add(supPizzaCell);
         listView.setItems(myObservableList);
         listView.refresh();

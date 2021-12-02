@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.HelloController">
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
@@ -26,9 +26,9 @@
     <Label fx:id="welcomeText" />
    <Pane prefHeight="706.0" prefWidth="1160.0">
       <children>
-         <BorderPane fx:id="layout" layoutX="872.0" prefHeight="550.0" prefWidth="288.0">
+         <BorderPane fx:id="layout" layoutX="872.0" prefHeight="550.0" prefWidth="488.0">
             <center>
-               <ListView fx:id="listView" prefHeight="200.0" prefWidth="275.0" BorderPane.alignment="CENTER" />
+               <ListView fx:id="listView" prefHeight="200.0" prefWidth="435.0" BorderPane.alignment="CENTER" />
             </center></BorderPane>
          <TitledPane alignment="CENTER" animated="false" layoutX="14.0" prefHeight="318.0" prefWidth="544.0" text="Pizzas">
            <content>
@@ -36,35 +36,38 @@
                   <children>
                      <Pane layoutX="14.0" layoutY="14.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="cheeseSize" fx:id="cheeseSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="cheeseSize" fx:id="cheeseSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@cheesepizza.png" />
                               </image>
                            </ImageView>
                            <Button id="cheeseAdd" fx:id="cheeseAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#cheeseOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+                           <ComboBox fx:id="cheeseCrust" layoutX="70.0" layoutY="150.0" prefHeight="26.0" prefWidth="73.0" promptText="Crust" />
                         </children>
                      </Pane>
                      <Pane layoutX="191.0" layoutY="14.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="pepSize" fx:id="pepSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="pepSize" fx:id="pepSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@peppazza.png" />
                               </image>
                            </ImageView>
                            <Button id="pepAdd" fx:id="pepAdd" layoutX="38.0" layoutY="185.0" mnemonicParsing="false" onAction="#pepOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+                           <ComboBox fx:id="pepCrust" layoutX="70.0" layoutY="150.0" prefHeight="26.0" prefWidth="73.0" promptText="Crust" />
                         </children>
                      </Pane>
                      <Pane layoutX="372.0" layoutY="14.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="supSize" fx:id="supSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="supSize" fx:id="supSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@suppizza.png" />
                               </image>
                            </ImageView>
                            <Button id="supAdd" fx:id="supAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#supOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+                           <ComboBox fx:id="supCrust" layoutX="70.0" layoutY="150.0" prefHeight="26.0" prefWidth="73.0" promptText="Crust" />
                         </children>
                      </Pane>
                   </children>
@@ -77,7 +80,7 @@
                   <children>
                      <Pane layoutX="14.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="pepsiSize" fx:id="pepsiSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="pepsiSize" fx:id="pepsiSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@pepsi.png" />
@@ -88,7 +91,7 @@
                      </Pane>
                      <Pane layoutX="189.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="cokeSize" fx:id="cokeSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="cokeSize" fx:id="cokeSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@coke.png" />
@@ -99,7 +102,7 @@
                      </Pane>
                      <Pane layoutX="355.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="dewSize" fx:id="dewSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="dewSize" fx:id="dewSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@dew.png" />
@@ -110,7 +113,7 @@
                      </Pane>
                      <Pane layoutX="518.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="pepsiSize" fx:id="spriteSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="pepsiSize" fx:id="spriteSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@sprite.png" />
@@ -121,7 +124,7 @@
                      </Pane>
                      <Pane layoutX="686.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="pepsiSize" fx:id="fantaSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="pepsiSize" fx:id="fantaSize" layoutY="150.0" prefHeight="26.0" prefWidth="70.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
                                  <Image url="@fanta.png" />
@@ -134,8 +137,8 @@
                </AnchorPane>
            </content>
          </TitledPane>
-         <Label fx:id="recieptTotalLabel" layoutX="946.0" layoutY="550.0" text="0.00" />
-         <Label layoutX="882.0" layoutY="550.0" text="Total:" />
+         <Label fx:id="recieptTotalLabel" layoutX="1081.0" layoutY="550.0" text="0.00" />
+         <Label layoutX="996.0" layoutY="550.0" text="Total:   $" />
          <TitledPane alignment="CENTER" animated="false" layoutX="564.0" prefHeight="318.0" prefWidth="305.0" text="Additional Toppings">
            <content>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="297.0">
@@ -153,16 +156,16 @@
                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                        </rowConstraints>
                         <children>
-                           <CheckBox mnemonicParsing="false" text="CheckBox" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.rowIndex="1" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.rowIndex="2" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.rowIndex="3" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.rowIndex="4" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                           <CheckBox mnemonicParsing="false" text="CheckBox" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           <CheckBox mnemonicParsing="false" text="Add Pepperoni" />
+                           <CheckBox mnemonicParsing="false" text="Add Onions" GridPane.columnIndex="1" />
+                           <CheckBox mnemonicParsing="false" text="Add Ground Beef" GridPane.rowIndex="1" />
+                           <CheckBox mnemonicParsing="false" text="Add Green Peppers" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           <CheckBox mnemonicParsing="false" text="Add Sausage" GridPane.rowIndex="2" />
+                           <CheckBox mnemonicParsing="false" text="Add Pineapples" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           <CheckBox mnemonicParsing="false" text="Add Black Olives" GridPane.rowIndex="3" />
+                           <CheckBox mnemonicParsing="false" text="Add Mushrooms" GridPane.rowIndex="4" />
+                           <CheckBox mnemonicParsing="false" text="Add Extra Cheese" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           <CheckBox mnemonicParsing="false" text="Add Grilled Chicken" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         </children>
                      </GridPane>
                   </children>
