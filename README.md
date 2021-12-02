@@ -15,7 +15,7 @@ There should be at least:
  
 2 crust options
  
-5 beverages
+5 beverages---Completed
  
 3 distinct beverage sizes---Completed
  
