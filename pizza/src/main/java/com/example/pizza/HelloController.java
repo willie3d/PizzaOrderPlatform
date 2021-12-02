@@ -53,6 +53,10 @@ public class HelloController {
     @FXML
     private ComboBox dewSize;
     @FXML
+    private ComboBox spriteSize;
+    @FXML
+    private ComboBox fantaSize;
+    @FXML
     private TextField cheeseQuant;
     @FXML
     private TextField pepQuant;
@@ -65,6 +69,10 @@ public class HelloController {
     @FXML
     private TextField dewQuant;
     @FXML
+    private TextField spriteQuant;
+    @FXML
+    private TextField fantaQuant;
+    @FXML
     private Button cheeseAdd;
     @FXML
     private Button pepAdd;
@@ -76,6 +84,10 @@ public class HelloController {
     private Button cokeAdd;
     @FXML
     private Button dewAdd;
+    @FXML
+    private Button spriteAdd;
+    @FXML
+    private Button fantaAdd;
     @FXML
     private Button backPage;
     @FXML
@@ -92,6 +104,7 @@ public class HelloController {
         Timeline fiveSecondsWonder = new Timeline(new KeyFrame(Duration.seconds(1), new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
+                totalPrice = Math.round(totalPrice * 100.0) / 100.0;
                 recieptTotalLabel.setText(String.valueOf(totalPrice));
             }
         }));
@@ -132,6 +145,8 @@ public class HelloController {
         pepsiSize.setItems(sodaSizeList);
         cokeSize.setItems(sodaSizeList);
         dewSize.setItems(sodaSizeList);
+        spriteSize.setItems(sodaSizeList);
+        fantaSize.setItems(sodaSizeList);
         BorderPane layout = new BorderPane();
         List<HBoxCell> list = new ArrayList<>();
         ListView<HBoxCell> listView = new ListView<HBoxCell>();
@@ -246,6 +261,40 @@ public class HelloController {
         listView.setItems(myObservableList);
         listView.refresh();
         totalPrice = totalPrice + dewSodaCell.getCost();
+        recieptTotalLabel.setText(String.valueOf(totalPrice));
+    }
+    @FXML
+    protected void spriteOnMouseClicked() {
+        double thisPrice = 0;
+        if(spriteSize.getValue().toString() == "Can"){
+            thisPrice = 0.99;
+        } else if(spriteSize.getValue().toString() == "Bottle"){
+            thisPrice = 1.49;
+        } else if(spriteSize.getValue().toString() == "2-Liter"){
+            thisPrice = 1.99;
+        }
+        HBoxCell spriteSodaCell = new HBoxCell(String.valueOf(thisPrice) + "   " + spriteSize.getValue() +" Sprite","Remove",thisPrice);
+        list.add(spriteSodaCell);
+        listView.setItems(myObservableList);
+        listView.refresh();
+        totalPrice = totalPrice + spriteSodaCell.getCost();
+        recieptTotalLabel.setText(String.valueOf(totalPrice));
+    }
+    @FXML
+    protected void fantaOnMouseClicked() {
+        double thisPrice = 0;
+        if(fantaSize.getValue().toString() == "Can"){
+            thisPrice = 0.99;
+        } else if(fantaSize.getValue().toString() == "Bottle"){
+            thisPrice = 1.49;
+        } else if(fantaSize.getValue().toString() == "2-Liter"){
+            thisPrice = 1.99;
+        }
+        HBoxCell fantaSodaCell = new HBoxCell(String.valueOf(thisPrice) + "   " + fantaSize.getValue() +" Orange Fanta","Remove",thisPrice);
+        list.add(fantaSodaCell);
+        listView.setItems(myObservableList);
+        listView.refresh();
+        totalPrice = totalPrice + fantaSodaCell.getCost();
         recieptTotalLabel.setText(String.valueOf(totalPrice));
     }
     @FXML

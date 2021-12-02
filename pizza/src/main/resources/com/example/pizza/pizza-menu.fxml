@@ -23,11 +23,11 @@
     <Label fx:id="welcomeText" />
    <Pane prefHeight="706.0" prefWidth="1160.0">
       <children>
-         <BorderPane fx:id="layout" layoutX="761.0" prefHeight="550.0" prefWidth="399.0">
+         <BorderPane fx:id="layout" layoutX="872.0" prefHeight="550.0" prefWidth="288.0">
             <center>
-               <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+               <ListView fx:id="listView" prefHeight="200.0" prefWidth="275.0" BorderPane.alignment="CENTER" />
             </center></BorderPane>
-         <TitledPane animated="false" layoutX="14.0" prefHeight="318.0" prefWidth="746.0" text="Pizzas">
+         <TitledPane animated="false" layoutX="14.0" prefHeight="318.0" prefWidth="855.0" text="Pizzas">
            <content>
              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="712.0">
                   <children>
@@ -71,9 +71,9 @@
                </AnchorPane>
            </content>
          </TitledPane>
-         <TitledPane animated="false" layoutX="14.0" layoutY="338.0" prefHeight="318.0" prefWidth="746.0" text="Beverages">
+         <TitledPane animated="false" layoutX="14.0" layoutY="338.0" prefHeight="318.0" prefWidth="855.0" text="Beverages">
            <content>
-             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="744.0">
+             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="919.0">
                   <children>
                      <Pane layoutX="14.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
@@ -87,7 +87,7 @@
                            <TextField id="pepsiQuant" fx:id="pepsiQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
-                     <Pane layoutX="200.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
+                     <Pane layoutX="189.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
                            <ComboBox id="cokeSize" fx:id="cokeSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -99,7 +99,7 @@
                            <TextField id="cokeQuant" fx:id="cokeQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
-                     <Pane layoutX="372.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
+                     <Pane layoutX="355.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
                            <ComboBox id="dewSize" fx:id="dewSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
@@ -111,16 +111,28 @@
                            <TextField id="dewQuant" fx:id="dewQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
-                     <Pane layoutX="555.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
+                     <Pane layoutX="518.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
                         <children>
-                           <ComboBox id="pepsiSize" fx:id="pepsiSize1" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ComboBox id="pepsiSize" fx:id="spriteSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
                            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                               <image>
-                                 <Image url="@pepsi.png" />
+                                 <Image url="@sprite.png" />
                               </image>
                            </ImageView>
-                           <Button id="pepsiAdd" fx:id="pepsiAdd1" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#pepsiOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="pepsiQuant" fx:id="pepsiQuant1" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+                           <Button id="pepsiAdd" fx:id="spriteAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#spriteOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+                           <TextField id="pepsiQuant" fx:id="spriteQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+                        </children>
+                     </Pane>
+                     <Pane layoutX="686.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
+                        <children>
+                           <ComboBox id="pepsiSize" fx:id="fantaSize" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@fanta.png" />
+                              </image>
+                           </ImageView>
+                           <Button id="pepsiAdd" fx:id="fantaAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#fantaOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+                           <TextField id="pepsiQuant" fx:id="fantaQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                   </children>
