@@ -18,11 +18,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.io.IOException;
 
-public class LoginController {
+public class CreateController {
     @FXML
     private Button asGuestButton;
     @FXML
-    private Button toCreateButton;
+    private Button toLoginButton;
     @FXML
     public void ContinueButton() throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("pizza-menu.fxml"));
@@ -32,12 +32,11 @@ public class LoginController {
         stage.setScene(scene);
     }
     @FXML
-    public void CreatePageButton() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("create-account.fxml"));
-        Stage stage = (Stage) toCreateButton.getScene().getWindow();
+    public void LoginPageButton() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
+        Stage stage = (Stage) toLoginButton.getScene().getWindow();
         fxmlLoader.load();
         Scene scene = new Scene(fxmlLoader.getRoot());
         stage.setScene(scene);
     }
-    
 }

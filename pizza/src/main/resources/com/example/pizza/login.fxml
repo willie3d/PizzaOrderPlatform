@@ -17,8 +17,8 @@
       <TextField prefHeight="25.0" prefWidth="256.0" promptText="Username" />
       <Label text="Password" />
       <TextField promptText="Password" />
-      <Button mnemonicParsing="false" text="Create Account" />
-      <Button fx:id="nextPage" mnemonicParsing="false" onAction="#toMenuButton" text="Log In" />
-      <Button mnemonicParsing="false" text="Continue as Guest" />
+      <Button fx:id="toCreateButton" mnemonicParsing="false" onAction="#CreatePageButton" text="To Create Account" />
+      <Button mnemonicParsing="false" text="Log In" />
+      <Button fx:id="asGuestButton" mnemonicParsing="false" onAction="#ContinueButton" text="Continue as Guest" />
    </children>
 </VBox>

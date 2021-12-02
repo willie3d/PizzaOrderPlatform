@@ -6,9 +6,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.LoginController">
+<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.CreateController">
    <children>
-      <Label text="Jet's Pizza">
+      <Label text="Create Account">
          <font>
             <Font size="36.0" />
          </font>
@@ -17,8 +17,8 @@
       <TextField prefHeight="25.0" prefWidth="256.0" promptText="Username" />
       <Label text="Password" />
       <TextField promptText="Password" />
-      <Button fx:id="toCreateButton" mnemonicParsing="false" onAction="#CreatePageButton" text="To Create Account" />
-      <Button mnemonicParsing="false" text="Log In" />
+      <Button mnemonicParsing="false" text="Create Account" />
+      <Button fx:id="toLoginButton" mnemonicParsing="false" onAction="#LoginPageButton" text="Back To Log In" />
       <Button fx:id="asGuestButton" mnemonicParsing="false" onAction="#ContinueButton" text="Continue as Guest" />
    </children>
 </VBox>
