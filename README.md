@@ -19,7 +19,7 @@ There should be at least:
  
 3 distinct beverage sizes---Completed
  
-The display should display the pricing of the various options
+The display should display the pricing of the various options---Completed
  
 
  What to turn in: 
