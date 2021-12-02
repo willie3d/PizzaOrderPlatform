@@ -115,6 +115,8 @@
                </AnchorPane>
            </content>
          </TitledPane>
+         <Label fx:id="recieptTotalLabel" layoutX="946.0" layoutY="550.0" text="0.00" />
+         <Label layoutX="882.0" layoutY="550.0" text="Total:" />
       </children>
    </Pane>
 </VBox>
