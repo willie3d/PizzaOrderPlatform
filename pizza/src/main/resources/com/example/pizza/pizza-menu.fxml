@@ -111,6 +111,18 @@
                            <TextField id="dewQuant" fx:id="dewQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
+                     <Pane layoutX="555.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
+                        <children>
+                           <ComboBox id="pepsiSize" fx:id="pepsiSize1" layoutY="150.0" prefHeight="26.0" prefWidth="80.0" promptText="Size" />
+                           <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@pepsi.png" />
+                              </image>
+                           </ImageView>
+                           <Button id="pepsiAdd" fx:id="pepsiAdd1" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#pepsiOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
+                           <TextField id="pepsiQuant" fx:id="pepsiQuant1" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
+                        </children>
+                     </Pane>
                   </children>
                </AnchorPane>
            </content>
