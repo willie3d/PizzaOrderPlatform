@@ -5,7 +5,6 @@
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TitledPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -40,7 +39,6 @@
                               </image>
                            </ImageView>
                            <Button id="cheeseAdd" fx:id="cheeseAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#cheeseOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="cheeseQuant" fx:id="cheeseQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                      <Pane layoutX="191.0" layoutY="14.0" prefHeight="214.0" prefWidth="143.0">
@@ -52,7 +50,6 @@
                               </image>
                            </ImageView>
                            <Button id="pepAdd" fx:id="pepAdd" layoutX="38.0" layoutY="185.0" mnemonicParsing="false" onAction="#pepOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="pepQuant" fx:id="pepQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                      <Pane layoutX="372.0" layoutY="14.0" prefHeight="214.0" prefWidth="143.0">
@@ -64,7 +61,6 @@
                               </image>
                            </ImageView>
                            <Button id="supAdd" fx:id="supAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#supOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="supQuant" fx:id="supQuant" layoutX="76.0" layoutY="150.0" prefHeight="31.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                   </children>
@@ -84,7 +80,6 @@
                               </image>
                            </ImageView>
                            <Button id="pepsiAdd" fx:id="pepsiAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#pepsiOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="pepsiQuant" fx:id="pepsiQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                      <Pane layoutX="189.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
@@ -96,7 +91,6 @@
                               </image>
                            </ImageView>
                            <Button id="cokeAdd" fx:id="cokeAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#cokeOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="cokeQuant" fx:id="cokeQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                      <Pane layoutX="355.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
@@ -108,7 +102,6 @@
                               </image>
                            </ImageView>
                            <Button id="dewAdd" fx:id="dewAdd" layoutX="38.0" layoutY="187.0" mnemonicParsing="false" onAction="#dewOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="dewQuant" fx:id="dewQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                      <Pane layoutX="518.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
@@ -120,7 +113,6 @@
                               </image>
                            </ImageView>
                            <Button id="pepsiAdd" fx:id="spriteAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#spriteOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="pepsiQuant" fx:id="spriteQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                      <Pane layoutX="686.0" layoutY="24.0" prefHeight="214.0" prefWidth="143.0">
@@ -132,7 +124,6 @@
                               </image>
                            </ImageView>
                            <Button id="pepsiAdd" fx:id="fantaAdd" layoutX="38.0" layoutY="186.0" mnemonicParsing="false" onAction="#fantaOnMouseClicked" prefHeight="26.0" prefWidth="80.0" text="Add" />
-                           <TextField id="pepsiQuant" fx:id="fantaQuant" layoutX="76.0" layoutY="150.0" prefHeight="26.0" prefWidth="72.0" promptText="Quantity" />
                         </children>
                      </Pane>
                   </children>

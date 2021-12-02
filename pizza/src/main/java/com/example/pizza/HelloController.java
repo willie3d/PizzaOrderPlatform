@@ -57,22 +57,6 @@ public class HelloController {
     @FXML
     private ComboBox fantaSize;
     @FXML
-    private TextField cheeseQuant;
-    @FXML
-    private TextField pepQuant;
-    @FXML
-    private TextField supQuant;
-    @FXML
-    private TextField pepsiQuant;
-    @FXML
-    private TextField cokeQuant;
-    @FXML
-    private TextField dewQuant;
-    @FXML
-    private TextField spriteQuant;
-    @FXML
-    private TextField fantaQuant;
-    @FXML
     private Button cheeseAdd;
     @FXML
     private Button pepAdd;
