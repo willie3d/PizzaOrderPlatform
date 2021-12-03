@@ -28,12 +28,12 @@
             </Label>
             <TitledPane maxWidth="300.0" prefWidth="500.0" text="Username" textAlignment="CENTER">
                <graphic>
-                  <TextField prefHeight="25.0" prefWidth="256.0" promptText="Username" />
+                  <TextField fx:id="usernameInput" prefHeight="25.0" prefWidth="256.0" promptText="Username" />
                </graphic>
             </TitledPane>
             <TitledPane maxWidth="300.0" prefWidth="500.0" text="Password" textAlignment="CENTER">
                <graphic>
-                  <TextField prefHeight="25.0" prefWidth="256.0" promptText="Password" />
+                  <TextField fx:id="passwordInput" prefHeight="25.0" prefWidth="256.0" promptText="Password" />
                </graphic>
             </TitledPane>
             <HBox>

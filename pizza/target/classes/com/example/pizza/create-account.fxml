@@ -31,7 +31,7 @@
             </Label>
             <TitledPane maxWidth="300.0" prefWidth="500.0" text="Username*" textAlignment="CENTER">
                <graphic>
-                  <TextField prefHeight="25.0" prefWidth="256.0" promptText="Username" />
+                  <TextField fx:id="usernameInput" prefHeight="25.0" prefWidth="256.0" promptText="Username" />
                </graphic>
                <VBox.margin>
                   <Insets right="550.0" />
@@ -39,7 +39,7 @@
             </TitledPane>
             <TitledPane maxWidth="300.0" prefWidth="500.0" text="Password*" textAlignment="CENTER">
                <graphic>
-                  <TextField prefHeight="25.0" prefWidth="256.0" promptText="Password" />
+                  <TextField fx:id="passwordInput" prefHeight="25.0" prefWidth="256.0" promptText="Password" />
                </graphic>
                <VBox.margin>
                   <Insets right="553.0" />
@@ -108,7 +108,7 @@
                         <Insets left="400.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" text="Create New Account">
+                  <Button fx:id="createAccountButton" mnemonicParsing="false" text="Create New Account">
                      <HBox.margin>
                         <Insets left="100.0" />
                      </HBox.margin>
