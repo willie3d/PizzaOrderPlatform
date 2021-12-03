@@ -1,24 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.LoginController">
+
+<Pane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.LoginController">
    <children>
-      <Label text="Jet's Pizza">
-         <font>
-            <Font size="36.0" />
-         </font>
-      </Label>
-      <Label text="Username" />
-      <TextField prefHeight="25.0" prefWidth="256.0" promptText="Username" />
-      <Label text="Password" />
-      <TextField promptText="Password" />
-      <Button fx:id="toCreateButton" mnemonicParsing="false" onAction="#CreatePageButton" text="To Create Account" />
-      <Button mnemonicParsing="false" text="Log In" />
-      <Button fx:id="asGuestButton" mnemonicParsing="false" onAction="#ContinueButton" text="Continue as Guest" />
+      <ImageView fitHeight="254.0" fitWidth="309.0" layoutX="435.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../pizzashop.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0">
+         <children>
+            <Label text="Jet's Pizza">
+               <font>
+                  <Font size="57.0" />
+               </font>
+            </Label>
+            <TitledPane maxWidth="300.0" prefWidth="500.0" text="Username" textAlignment="CENTER">
+               <graphic>
+                  <TextField prefHeight="25.0" prefWidth="256.0" promptText="Username" />
+               </graphic>
+            </TitledPane>
+            <TitledPane maxWidth="300.0" prefWidth="500.0" text="Password" textAlignment="CENTER">
+               <graphic>
+                  <TextField prefHeight="25.0" prefWidth="256.0" promptText="Password" />
+               </graphic>
+            </TitledPane>
+            <HBox>
+               <children>
+                  <Button fx:id="toCreateButton" mnemonicParsing="false" onAction="#CreatePageButton" text="To Create Account">
+                     <HBox.margin>
+                        <Insets left="350.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" text="Log In">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="asGuestButton" mnemonicParsing="false" onAction="#ContinueButton" text="Continue as Guest">
+                     <HBox.margin>
+                        <Insets left="100.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
    </children>
-</VBox>
+</Pane>
