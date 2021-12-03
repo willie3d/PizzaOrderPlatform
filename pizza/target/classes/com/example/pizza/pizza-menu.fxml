@@ -156,16 +156,16 @@
                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                        </rowConstraints>
                         <children>
-                           <CheckBox mnemonicParsing="false" text="Add Pepperoni" />
-                           <CheckBox mnemonicParsing="false" text="Add Onions" GridPane.columnIndex="1" />
-                           <CheckBox mnemonicParsing="false" text="Add Ground Beef" GridPane.rowIndex="1" />
-                           <CheckBox mnemonicParsing="false" text="Add Green Peppers" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                           <CheckBox mnemonicParsing="false" text="Add Sausage" GridPane.rowIndex="2" />
-                           <CheckBox mnemonicParsing="false" text="Add Pineapples" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                           <CheckBox mnemonicParsing="false" text="Add Black Olives" GridPane.rowIndex="3" />
-                           <CheckBox mnemonicParsing="false" text="Add Mushrooms" GridPane.rowIndex="4" />
-                           <CheckBox mnemonicParsing="false" text="Add Extra Cheese" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                           <CheckBox mnemonicParsing="false" text="Add Grilled Chicken" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                           <CheckBox fx:id="pepperoniTop" mnemonicParsing="false" text="Add Pepperoni" />
+                           <CheckBox fx:id="onionTop" mnemonicParsing="false" text="Add Onions" GridPane.columnIndex="1" />
+                           <CheckBox fx:id="beefTop" mnemonicParsing="false" text="Add Ground Beef" GridPane.rowIndex="1" />
+                           <CheckBox fx:id="pepperTop" mnemonicParsing="false" text="Add Green Peppers" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                           <CheckBox fx:id="sausageTop" mnemonicParsing="false" text="Add Sausage" GridPane.rowIndex="2" />
+                           <CheckBox fx:id="pineTop" mnemonicParsing="false" text="Add Pineapples" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                           <CheckBox fx:id="oliveTop" mnemonicParsing="false" text="Add Black Olives" GridPane.rowIndex="3" />
+                           <CheckBox fx:id="mushroomTop" mnemonicParsing="false" text="Add Mushrooms" GridPane.rowIndex="4" />
+                           <CheckBox fx:id="exCheeseTop" mnemonicParsing="false" text="Add Extra Cheese" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                           <CheckBox fx:id="chickenTop" mnemonicParsing="false" text="Add Grilled Chicken" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                         </children>
                      </GridPane>
                   </children>

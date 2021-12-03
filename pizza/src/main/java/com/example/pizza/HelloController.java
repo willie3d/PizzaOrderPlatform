@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
@@ -82,6 +83,26 @@ public class HelloController {
     @FXML
     private Button backPage;
     @FXML
+    private CheckBox pepperoniTop;
+    @FXML
+    private CheckBox beefTop;
+    @FXML
+    private CheckBox sausageTop;
+    @FXML
+    private CheckBox oliveTop;
+    @FXML
+    private CheckBox mushroomTop;
+    @FXML
+    private CheckBox onionTop;
+    @FXML
+    private CheckBox pepperTop;
+    @FXML
+    private CheckBox pineTop;
+    @FXML
+    private CheckBox exCheeseTop;
+    @FXML
+    private CheckBox chickenTop;
+    @FXML
     BorderPane layout = new BorderPane();
     @FXML
     ListView<HBoxCell> listView = new ListView<HBoxCell>();
@@ -150,6 +171,100 @@ public class HelloController {
         refresh();
     }
     @FXML
+    public void checkToppings(){
+        double toppingPrice = 0.99;
+        if(pepperoniTop.isSelected()){
+            HBoxCell pepperoniTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Pepperoni Topping", "Remove", toppingPrice);
+            list.add(pepperoniTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + pepperoniTopCell.getCost();
+            pepperoniTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(beefTop.isSelected()){
+            HBoxCell beefTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Ground Beef Topping", "Remove", toppingPrice);
+            list.add(beefTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + beefTopCell.getCost();
+            beefTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(sausageTop.isSelected()){
+            HBoxCell sausageTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Sausage Topping", "Remove", toppingPrice);
+            list.add(sausageTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + sausageTopCell.getCost();
+            sausageTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(oliveTop.isSelected()){
+            HBoxCell oliveTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Black Olive Topping", "Remove", toppingPrice);
+            list.add(oliveTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + oliveTopCell.getCost();
+            oliveTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(mushroomTop.isSelected()){
+            HBoxCell mushroomTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Mushroom Topping", "Remove", toppingPrice);
+            list.add(mushroomTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + mushroomTopCell.getCost();
+            mushroomTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(onionTop.isSelected()){
+            HBoxCell onionTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Onion Topping", "Remove", toppingPrice);
+            list.add(onionTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + onionTopCell.getCost();
+            onionTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(pepperTop.isSelected()){
+            HBoxCell pepperTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Green Pepper Topping", "Remove", toppingPrice);
+            list.add(pepperTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + pepperTopCell.getCost();
+            pepperTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(pineTop.isSelected()){
+            HBoxCell pineTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Pineapple Topping", "Remove", toppingPrice);
+            list.add(pineTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + pineTopCell.getCost();
+            pineTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(exCheeseTop.isSelected()){
+            HBoxCell exCheeseTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Extra Cheese Topping", "Remove", toppingPrice);
+            list.add(exCheeseTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + exCheeseTopCell.getCost();
+            exCheeseTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+        if(chickenTop.isSelected()){
+            HBoxCell chickenTopCell = new HBoxCell("     "+ String.valueOf(toppingPrice)+ " Grilled Chicken Topping", "Remove", toppingPrice);
+            list.add(chickenTopCell);
+            listView.setItems(myObservableList);
+            listView.refresh();
+            totalPrice = totalPrice + chickenTopCell.getCost();
+            chickenTop.setSelected(false);
+            recieptTotalLabel.setText(String.valueOf(totalPrice));
+        }
+    }
+    @FXML
     protected void cheeseOnMouseClicked() {
         double thisPrice = 0;
         if(cheeseSize.getValue().toString() == "Small"){
@@ -167,6 +282,7 @@ public class HelloController {
         listView.refresh();
         totalPrice = totalPrice + cheesePizzaCell.getCost();
         recieptTotalLabel.setText(String.valueOf(totalPrice));
+        checkToppings();
     }
     @FXML
     protected void pepOnMouseClicked() {
@@ -186,6 +302,7 @@ public class HelloController {
         listView.refresh();
         totalPrice = totalPrice + pepPizzaCell.getCost();
         recieptTotalLabel.setText(String.valueOf(totalPrice));
+        checkToppings();
     }
     @FXML
     protected void supOnMouseClicked() {
@@ -205,6 +322,7 @@ public class HelloController {
         listView.refresh();
         totalPrice = totalPrice + supPizzaCell.getCost();
         recieptTotalLabel.setText(String.valueOf(totalPrice));
+        checkToppings();
     }
     @FXML
     protected void pepsiOnMouseClicked() {
