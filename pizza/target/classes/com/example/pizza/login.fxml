@@ -12,12 +12,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <Pane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.LoginController">
    <children>
       <ImageView fitHeight="254.0" fitWidth="309.0" layoutX="435.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../../../../../../../pizzashop.png" />
+            <Image url="@pizzashop.png" />
          </image>
       </ImageView>
       <VBox alignment="CENTER" prefHeight="800.0" prefWidth="1200.0" spacing="20.0">
