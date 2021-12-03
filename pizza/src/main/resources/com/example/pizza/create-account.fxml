@@ -12,7 +12,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.LoginController">
+<Pane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pizza.CreateController">
    <children>
       <ImageView fitHeight="198.0" fitWidth="277.0" layoutX="467.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
          <image>
@@ -103,12 +103,12 @@
             </TitledPane>
             <HBox>
                <children>
-                  <Button fx:id="toCreateButton" mnemonicParsing="false" onAction="#CreatePageButton" text="Back">
+                  <Button fx:id="toLoginButton" mnemonicParsing="false" onAction="#LoginPageButton" text="Back">
                      <HBox.margin>
                         <Insets left="400.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="createAccountButton" mnemonicParsing="false" text="Create New Account">
+                  <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#CreateAccountButton" text="Create New Account">
                      <HBox.margin>
                         <Insets left="100.0" />
                      </HBox.margin>

@@ -43,7 +43,7 @@
                         <Insets left="350.0" />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" text="Log In">
+                  <Button fx:id="loginButton" mnemonicParsing="false" onAction="#CheckLoginButton" text="Log In">
                      <HBox.margin>
                         <Insets left="100.0" />
                      </HBox.margin>
