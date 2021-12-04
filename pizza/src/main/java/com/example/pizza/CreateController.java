@@ -57,27 +57,22 @@ public class CreateController {
         String username = usernameInput.getText();
         String password = passwordInput.getText();
         System.out.println(username);
-        try{
-            FileWriter filewrite = new FileWriter("username.txt", true);
+        
+            FileWriter filewrite = new FileWriter(usernameAdd, true);
             BufferedWriter writer = new BufferedWriter(filewrite); 
             writer.write(username);
            // writer.newLine();
 
             // filewrite.flush();
             // writer.flush();
-            writer.close();
-            filewrite.close();
-            filewrite = new FileWriter("password.txt", true);
+
+            filewrite = new FileWriter(passwordAdd, true);
             writer = new BufferedWriter(filewrite);
             writer.write(password);
           //  writer.newLine();
 
           writer.close();
             filewrite.close();
-        }
-        catch(IOException e){
-
-        }
             
 
     }
