@@ -62,19 +62,19 @@ public class CreateController {
             writer.write(username);
            // writer.newLine();
 
-            filewrite.close();
-            writer.close();
+            // filewrite.flush();
+            // writer.flush();
 
             filewrite = new FileWriter(passwordAdd, true);
             writer = new BufferedWriter(filewrite);
             writer.write(password);
           //  writer.newLine();
 
-            filewrite.close();
-            writer.close();
+            // filewrite.close();
+            // writer.close();
             
         } catch (Exception e){
-            System.out.println("Error in creating account");
+            System.out.println(e);
         }
     }
 }
