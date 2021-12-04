@@ -113,7 +113,7 @@
                         <Insets left="100.0" />
                      </HBox.margin>
                   </Button>
-                  <Button fx:id="asGuestButton" mnemonicParsing="false" onAction="#ContinueButton" text="Log In">
+                  <Button fx:id="asGuestButton" mnemonicParsing="false" onAction="#ContinueButton" text="Continue as Guest">
                      <HBox.margin>
                         <Insets left="100.0" />
                      </HBox.margin>
