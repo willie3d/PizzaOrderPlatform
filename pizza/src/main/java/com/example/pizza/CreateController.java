@@ -56,7 +56,8 @@ public class CreateController {
         String passwordAdd = "password.txt";
         String username = usernameInput.getText();
         String password = passwordInput.getText();
-        try {
+        System.out.println(username);
+        
             FileWriter filewrite = new FileWriter(usernameAdd, true);
             BufferedWriter writer = new BufferedWriter(filewrite); 
             writer.write(username);
@@ -70,11 +71,9 @@ public class CreateController {
             writer.write(password);
           //  writer.newLine();
 
-            // filewrite.close();
-            // writer.close();
+          writer.close();
+            filewrite.close();
             
-        } catch (Exception e){
-            System.out.println(e);
-        }
+
     }
 }
