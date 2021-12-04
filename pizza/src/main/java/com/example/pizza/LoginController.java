@@ -61,7 +61,7 @@ public class LoginController {
         //        FileReader frPass = new FileReader(passwordCheck);
                 BufferedReader brUser = new BufferedReader(frUser);
                 String line;
-                int count = 1;
+                int count = 0;
                 boolean isLoginSuccess = false;
                 while ((line = brUser.readLine()) != null) {
                     if (username.equals(line)) {
@@ -80,6 +80,12 @@ public class LoginController {
                 }
                 if (!isLoginSuccess) {
                     System.out.println("ERROR MESSAGE");
+                } else {
+                    FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("pizza-menu.fxml"));
+                    Stage stage = (Stage) asGuestButton.getScene().getWindow();
+                    fxmlLoader.load();
+                     Scene scene = new Scene(fxmlLoader.getRoot());
+                   stage.setScene(scene);
                 }
                 frUser.close();
     

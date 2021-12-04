@@ -61,18 +61,28 @@ public class CreateController {
             FileWriter filewrite = new FileWriter(usernameAdd, true);
             BufferedWriter writer = new BufferedWriter(filewrite); 
             writer.write(username);
-           // writer.newLine();
+            writer.newLine();
 
             // filewrite.flush();
             // writer.flush();
+            writer.close();
+            filewrite.close();
 
             filewrite = new FileWriter(passwordAdd, true);
             writer = new BufferedWriter(filewrite);
             writer.write(password);
-          //  writer.newLine();
+            writer.newLine();
 
-          writer.close();
+            writer.close();
             filewrite.close();
+            if (username != "" || password !=""){
+                FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("login.fxml"));
+                Stage stage = (Stage) toLoginButton.getScene().getWindow();
+                fxmlLoader.load();
+                Scene scene = new Scene(fxmlLoader.getRoot());
+                stage.setScene(scene);
+            }
+            
             
 
     }
